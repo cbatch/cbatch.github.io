@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Fruit Ninja</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: white;
+      color: #333333;
+      -webkit-font-smoothing: antialiased;
+      font-size: 16px;
+      font-family: "Source Sans Pro", Helvetica;
+    }
+
+    img {
+      display: block;
+    }
+
+    em {
+      font-size: 12px;
+    }
+
+    #signature {
+      margin-left: 30px;
+      font-style: oblique;
+    }
+
+    a:link,
+    a:visited {
+      color: #165788;
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+      text-decoration: underline;
+    }
+
+    .wrapper {
+      width: 660px;
+      margin: auto;
+    }
+
+    .container {
+      width: 660px;
+      margin: auto;
+    }
+
+    #content {
+      width: 650px;
+      margin: 70px auto 0px auto;
+    }
+
+    #content article {
+      margin-bottom: 150px;
+    }
+
+    #content h1,
+    #content h2 {
+      color: black;
+      margin-bottom: 30px;
+      font-weight: 200;
+      font-size: 48px;
+    }
+
+    #content h3 {
+      color: black;
+      border-bottom: 1px solid black;
+      text-transform: uppercase;
+      margin: 30px 0px 30px 0px;
+      font-size: 28px;
+      font-weight: 200;
+    }
+
+    #content p {
+      width: 100%;
+      line-height: 150%;
+      margin-bottom: 20px;
+    }
+
+    #content p:first-child {
+      font-size: 18px;
+      font-style: italic;
+      letter-spacing: 2px;
+    }
+
+    #content p:first-child:first-line {
+        font-weight: bold;
+    }
+
+    pre {
+      font-size: 10px;
+      padding: 15px;
+      border-radius: 10px;
+      background: #ddd;
+    }
+    ul {
+      margin-left: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <section id="content">
+    <h1>Fruit Ninja</h1>
+	   <h4>Team Ninja - CPE 476 - Spring 2015 - Zoe Wood</h4>
+     <br>
+     <i class="fa fa-github"></i><a style="margin-left: 8px" href="https://github.com/jamireh/FruitNinja">GitHub Source</a>
+     <br> 
+     <i class="fa fa-download"></i><a style="margin-left: 8px" href="https://github.com/jamireh/FruitNinja/releases/download/1.0.0/FruitNinja.exe">Windows Installer</a>
+  <article>	
+	<h3>Team</h3>
+	<ul>
+        <li>Connor Batch</li>
+		<li>Ian Meeder</li>
+		<li>Jon Amireh</li>
+		<li>Peter Godkin</li>
+		<li>Keenan Swafford</li>
+	</ul>
+	</br>
+     <a HREF="~/Images/screenshot.png"><img style="width:100%" src="~/Images/thumbnail.png"></a>
+   
+		<h3>Game Concept</h3>
+
+        <p>When deciding on what game we wanted to make, we first looked at some of our favorite games. We also wanted to make a game that had a consistent feel and so we knew that making a more &quot;cartoony&quot; game would be more feasible than a realistic game. The Legend of Zelda The Wind Waker was a game that quickly came to mind and would eventually become a big influence on the project. A weapon that is pretty quintessential to Zelda games is the bow and arrow and so we decided that we liked the idea of a game whose mechanics centered around the weapon. From a feasibility standpoint, we realized that a heavily offensive game would require complex AI which none of us were quite ready to fully delve into. Another game that our team had enjoyed playing in the past was Splinter Cell. It were here that we decided to make a stealth game. This way we could create AI that didn&#39;t have to attack and track the player, but rather only had to detect the player. At its base, we were set on a game: Stealth Bow and Arrow.
+        <br>
+        <br>
+        Now we needed an idea for a theme. With the idea of stealth it wasn&#39;t long until we decided on the idea that the player&#39;s character should be a ninja. But why would he be sneaking around? What would be his motivation? We eventually crafted the idea that he would be trying to steal back a prized possession of his. And because we don&#39;t have a single original bones in our bodies, we decided that he was trying to steal back his prized fruit, thus Fruit Ninja.
+        <br><br>
+        During development we kept looking back to the The Wind Waker&#39;s stealth level for inspiration. We realized that in order to pull off exactly what we wanted, there needed to be a balance between the bow and the guards that you would be sneaking around from. If the player could just attack and kill every guard, then the game would be too easy. But what would the bow be capable of, then? We decided that light could be part of the game&#39;s mechanics and thus in order to hide and sneak around, the player could shoot out lanterns with the bow. After playing a bit, though, we realized that being able to shoot and kill guards a rewarding mechanic that we didn&#39;t just want to get rid of. So we made two types of guards - killable ones and unkillable ones. But we still wanted more out of the bow. So again looking at Zelda, we borrowed the idea of shootable buttons. Over time in response to buttons and the like the game morphed and began to also have a lot of platforming elements that we hadn&#39;t originally envisioned.</p>
+		
+        <h3>User Guide</h3>
+
+        <p>Welcome to Fruit Ninja!  In this game you play as Chewy, a ninja aimed to reclaim the sacred pineapple from an unknown enemy.  Navigate through 5 different courtyards - sneak around out of the vision of guards (or shooting them with arrows), solve puzzles, avoid traps and reach the door on the other side of the courtyard to advance.
+
+During Chewy&#39;s adventure you will encounter guards - stay out of their line of sight and don&#39;t get too close to them or they will catch you!  The hearts in the top left corner of the screen indicate how many lives you have left.  If a guard catches you, you lose a life and reset to the beginning of the level.  When you run out of lives you will be reset to the beginning of the first level.
+
+Being a sneaky ninja, Chewy&#39;s weapon of choice is a bow and arrow.  The number of arrows that Chewy has is shown at the top right of the screen.  Right click to switch to arrow mode, where you can left click to fire your arrows.  Use the mouse&#39;s scroll wheel to adjust the arc that the arrow will follow when fired, which is shown as a red trail of dots.  You can shoot red guards, lights, targets, and a secret object in level 5!  Right click again to switch back to the normal camera.
+
+If the mouse controls seem off to you, press H to invert the camera controls.  You can change the controls back to normal by pressing G.
+
+Good luck on your journey!</p>
+          
+        <h3>Technologies</h3>
+        <ul>
+            <li>Entity Component System</li>
+            <li>Octree</li>
+            <li>AABB Collision Detection and Response</li>
+            <li>View Frustum Culling</li>
+            <li>Enemy detection via Raycasting</li>
+            <li>3rd-person Camera Collision</li>
+            <li>Deferred Shading</li>
+            <li>Rom-Catmull Spline-based Pathing</li>
+            <li>Freetype-based &amp; Texture-based HUD</li>
+            <li>Textured Modelling</li>
+            <li>(Very) Articulated Model Animation</li>
+            <li>Directional Shadow Mapping w/ hardware PCF antialiasing</li>
+            <li>Billboarded Particle System</li>
+            <li>ASCII-based Level Editing</li>
+            <li>Model Instancing</li>
+            <li>3D Positional Sound</li>
+        </ul>
+
+        <h3>Videos</h3>
+        <h4>Level 1<h4>
+        <br>
+        <p>
+            <iframe width="660" height="395" src="https://www.youtube.com/embed/c3yZ1idt5BU" frameborder="0" allowfullscreen></iframe>
+        </p>
+        <h4>Level 2<h4>
+        <br>
+        <p>
+            <iframe width="660" height="395" src="https://www.youtube.com/embed/vImWKLPASCU" frameborder="0" allowfullscreen></iframe>
+        </p>
+        <h4>Level 3<h4>
+        <br>
+        <p>
+            <iframe width="660" height="395" src="https://www.youtube.com/embed/1JPVycaTUEs" frameborder="0" allowfullscreen></iframe>
+        </p>
+        <h4>Level 4<h4>
+        <br>
+        <p>
+            <iframe width="660" height="395" src="https://www.youtube.com/embed/Ek96TZJGqUQ" frameborder="0" allowfullscreen></iframe>
+        </p>
+        <br>  
+        <h4>Level 5<h4>
+        <p>
+          <iframe width="660" height="395" src="https://www.youtube.com/embed/AGmGIq0PwxU" frameborder="0" allowfullscreen></iframe>
+        </p>
+
+        <h3>External Libraries</h3>
+        <ul>
+            <li><a href="http://assimp.sourceforge.net/">Assimp</a></li>
+            <li><a href="http://assimp.sourceforge.net/">Freetype</a></li>
+            <!--<li>
+              OpenGL, GLEW, GLFW, and FreeGLUT on Windows via Nuget Package Manager:
+              <ul>
+                <li><a href="https://www.nuget.org/packages/nupengl.core/">https://www.nuget.org/packages/nupengl.core.redist/</a></li>
+                <li><a href="https://www.nuget.org/packages/nupengl.core.redist/">https://www.nuget.org/packages/nupengl.core.redist/</a></li>
+              </ul>
+            </li>-->
+            <li><a href="http://www.fmod.org/">FMOD</a></li>
+        </ul>
+        <h3>Sources</h3>
+        <ul>
+            <li><a href="http://gamasutra.com/blogs/EricUndersander/20131001/201382/Accurate_Collision_Zoom_for_Cameras.php">Camera Collision</a></li>
+            <li><a href="http://gamedev.stackexchange.com/questions/19774/determine-corners-of-a-specific-plane-in-the-frustum">Plane Corners</a></li>
+            <li><a href="http://sol.gfxile.net/instancing.html">Instancing</a></li>
+            <li><a href="https://www.cs.csustan.edu/~rsc/CS3600F02/Splines.pdf">Rom-Catmull Splining</a></li>
+            <li><a href="http://gameprogrammingpatterns.com/component.html">Entity Component System</a></li>
+            <li><a href="http://ogldev.atspace.co.uk/www/tutorial38/tutorial38.html">Skeletal Animation</a></li>
+            <li><a href="http://ogldev.atspace.co.uk/www/tutorial37/tutorial37.html">Deferred Shading</a></li>
+            <li>
+              Shadow Mapping:
+              <ul>
+                <li><a href="http://ogldev.atspace.co.uk/www/tutorial23/tutorial23.html">http://ogldev.atspace.co.uk/www/tutorial23/tutorial23.html</a></li>
+                <li><a href="http://ogldev.atspace.co.uk/www/tutorial24/tutorial24.html">http://ogldev.atspace.co.uk/www/tutorial24/tutorial24.html</a></li>
+                <li><a href="http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-16-shadow-mapping/">http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-16-shadow-mapping/</a></li>
+                <li><a href="http://stackoverflow.com/questions/22419682/glsl-sampler2dshadow-and-shadow2d-clarification">http://stackoverflow.com/questions/22419682/glsl-sampler2dshadow-and-shadow2d-clarification</a></li>
+              </ul>
+            </li>
+        </ul>
+      </article>
+    </section>
+  </div>
+
+</body></html>
