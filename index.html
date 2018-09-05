@@ -10,8 +10,13 @@
         * {
             margin: 0;
             padding: 0;
-            font-family: 'Source Sans Pro';
         }
+
+        @font-face {
+            font-family: Source Sans Pro;
+            src: url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,400italic,700italic") /* TTF file for CSS3 browsers */
+        }
+
 
         body {
             background: white;
@@ -71,7 +76,6 @@
                 margin-bottom: 30px;
                 font-weight: 200;
                 font-size: 48px;
-                font-family: 'Source Sans Pro';
             }
 
             #content h3 {
@@ -81,14 +85,12 @@
                 margin: 30px 0px 30px 0px;
                 font-size: 28px;
                 font-weight: 200;
-                font-family: 'Source Sans Pro';
             }
 
             #content p {
                 width: 100%;
                 line-height: 150%;
                 margin-bottom: 20px;
-                font-family: 'Source Sans Pro';
             }
 
                 #content p:first-child {
